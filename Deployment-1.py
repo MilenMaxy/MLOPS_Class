@@ -64,6 +64,8 @@ print("Intercept:", lr.intercept_)
 # In[26]:
 
 
-with open('deploylr.plk','wb') as file:
-    pkl.dump(lr,file)
+file_path = os.path.join(os.getcwd(), 'deploylr.plk')
+
+with open(file_path, 'wb') as file:
+    pkl.dump(lr, file)
 
